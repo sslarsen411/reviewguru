@@ -21,7 +21,7 @@
 
             <!-- Button Section -->
             <div class="mt-5 sm:mt-8 sm:flex sm:justify-center ">
-                <div class="rounded-md shadow ">
+                <div class="rounded-md shadow-sm ">
                     <a href="#"
                        class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base
                        font-medium rounded-md text-white bg-orange-400 hover:bg-orange-200 md:py-4 md:text-lg md:px-10">
@@ -69,7 +69,7 @@
 
             <div class="space-y-4">
                 <!-- Feature 1 -->
-                <div class="bg-white rounded-xl shadow p-4" @click="selected !== 1 ? selected = 1 : selected = null">
+                <div class="bg-white rounded-xl shadow-sm p-4" @click="selected !== 1 ? selected = 1 : selected = null">
                     <h3 class="text-lg font-semibold flex justify-between items-center cursor-pointer">
                         🃏 Review Cards That Work
                         <span x-show="selected !== 1">➕</span>
@@ -81,7 +81,7 @@
                 </div>
 
                 <!-- Feature 2 -->
-                <div class="bg-white rounded-xl shadow p-4" @click="selected !== 2 ? selected = 2 : selected = null">
+                <div class="bg-white rounded-xl shadow-sm p-4" @click="selected !== 2 ? selected = 2 : selected = null">
                     <h3 class="text-lg font-semibold flex justify-between items-center cursor-pointer">
                         💻 Two Shakes Review App
                         <span x-show="selected !== 2">➕</span>
@@ -93,7 +93,7 @@
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="bg-white rounded-xl shadow p-4" @click="selected !== 3 ? selected = 3 : selected = null">
+                <div class="bg-white rounded-xl shadow-sm p-4" @click="selected !== 3 ? selected = 3 : selected = null">
                     <h3 class="text-lg font-semibold flex justify-between items-center cursor-pointer">
                         📘 Free Guide to Boosting Reviews
                         <span x-show="selected !== 3">➕</span>
