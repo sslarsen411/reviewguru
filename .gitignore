@@ -24,7 +24,7 @@ yarn-error.log
 /.editorconfig
 /.env.example
 /.gitattributes
-/bootstrap/cache/.gitignore
+
 /database/.gitignore
 /storage/app/private/.gitignore
 /storage/app/public/.gitignore
@@ -45,4 +45,3 @@ yarn-error.log
 /README.md
 /database/factories/UserFactory.php
 /resources/views/welcome.blade.php
-/bootstrap/cache/.gitignore
