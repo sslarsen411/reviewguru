@@ -11,7 +11,8 @@ layer(base);
   --font-poppins: Poppins, sans-serif;
   --font-josefin: Josefin Sans, sans-serif;
 
-  --background-image-guru-bg: url('/images/revguru-banner.png');
+     --background-image-guru-bg: url('/images/revguru-banner2.webp');
+    --background-image-hurts-bg: url('/images/brain_hurts.webp');
 }
 
 /*
@@ -38,11 +39,11 @@ layer(base);
     }
 
     html {
-        @apply font-josefin bg-zinc-200;
+        @apply font-josefin bg-zinc-50;
     }
 
     body {
-        @apply w-dvw;
+        @apply w-full;
     }
 
     section {
