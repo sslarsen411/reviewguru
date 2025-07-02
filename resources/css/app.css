@@ -12,6 +12,7 @@ layer(base);
   --font-josefin: Josefin Sans, sans-serif;
 
      --background-image-guru-bg: url('/images/revguru-banner2.webp');
+    --background-image-guru: url('/images/rave-review-guru.webp');
     --background-image-hurts-bg: url('/images/brain_hurts.webp');
 }
 

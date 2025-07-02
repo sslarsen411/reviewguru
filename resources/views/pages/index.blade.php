@@ -1,62 +1,229 @@
 <x-app-layout>
+    <section class="bg-slate-900 ">
+        <div class="grid py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 -mr-8 lg:grid-cols-12 bg-none lg:bg-guru bg-contain bg-no-repeat bg-right " >
+            <div class="mr-auto place-content-center lg:col-span-7 h-[50vh]">
+{{--                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Payments tool for software companies</h1>--}}
+                <h1 class="tracking-tight font-semibold text-zinc-100 text-balance ">
+                    <span class="text-xl md:text-2xl lg:text-3xl max-w-3/4 leading-normal block mb-12 text-pretty font-normal ">
+                        The <strong>Rave Review Guru </strong>says &ldquo;Getting customers to write a review is a
+                    </span>
+                    <span class="block text-4xl  md:text-5xl xl:text-6xl lg:text-6xl mt-2 text-red-500 italic text-nowrap bg-slate-900/80">
 
-    <section class="bg-guru-bg bg-contain bg-right bg-no-repeat  mx-auto px-4 sm:px-6 lg:px-8 mt-16 w-full h-[60vh]">
-        <div
-            class=" my-10 px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 ">
-            <div class="sm:text-center lg:text-left p-6 justify-self-start bg-zinc-50/60 rounded-lg">
-                <h1 class="tracking-tight font-semibold text-gray-600 text-balance ">
-                    <span class="block text-3xl mt-12">The Rave Review Guru says &ldquo;Let&apos;s face it&hellip; </span>
-
-                    <span class="text-4xl leading-normal block mt-6 text-nowrap ">Getting customers to write a review is a</span>
-                    <span class="block text-6xl mt-2 text-gray-800 italic text-nowrap">Giant pain in the @$$!&rdquo;</span>
+                        Giant pain in the @$$!&rdquo;
+{{--                        <img src="{{ asset('images/pain.webp') }}" alt="mockup" class="bg-slate-900/80 inline-block  h-20  rounded-xl">--}}
+                    </span>
                 </h1>
-                <h2 class="text-2xl my-6 text-zinc-600">
-                    The Rave Review Guru can show you a <strong><em>better</em></strong> way.
+                <h2 class="text-2xl my-12 text-zinc-100">
+                &ldquo;Let me show you a <strong><em>better</em></strong> way. &rdquo;
                 </h2>
-                <!-- Button Section -->
                 <div class="mt-5 sm:mt-8 sm:flex sm:justify-center ">
                     <div class="rounded-md shadow-sm ">
                         <a href="#"
                            class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base
-                           font-medium rounded-md text-white bg-orange-400 hover:bg-orange-200 md:py-4 md:text-lg md:px-10">
+                           font-medium rounded-md text-white bg-red-600 hover:bg-orange-200 md:py-4 md:text-2xl md:px-10">
                             Show me
                         </a>
                     </div>
                 </div>
-                <!-- End of Button Section -->
             </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex" ></div>
+        </div>
+    </section>
 
+    <section id="pain-points" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-2">
+            <h2 class="text-xl md:text-3xl lg:text-4xl font-bold text-red-900 mt-12 text-left">
+                The Frustration is Real
+            </h2>
+            <div class="space-y-12">
+                <!-- Block -->
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <p class="text-2xl font-semibold text-gray-800 mb-2">You struggle to get customer reviews </p>
+                        <p class="text-gray-600">Your customers love you, but they ghost your requests&hellip;</p>
+                    </div>
+                    <div class="flex justify-center p-16 bg-[#f8f7f1]">
+                        <img src="{{ asset('images/review-ghosting.webp') }}"
+                             alt="Customer ignoring review prompt" class="scale-x-[-1] rounded-xl w-72">
+                    </div>
+                </div>
+
+                <!-- Repeat Blocks Below -->
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div class="flex justify-center p-16 bg-[#f8f7f1]">
+                        <figure>
+                            <img src="{{ asset('images/mean-teacher.webp') }}"
+                                 alt="mean teacher" class="rounded-xl w-72">
+                            <figcaption class="text-left text-gray-700 text-base">
+                                &ldquo;Give me 500 words on &lsquo;Why I like this business&rsquo;.<br />It&apos;s due tomorrow.&rdquo;
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-semibold text-gray-800 mb-2">&hellip;because it feels like homework.</p>
+                        <p class="text-gray-600">Too much effort. No clear payoff. So they skip it.</p>
+                    </div>
+
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <p class="text-2xl font-semibold text-gray-800 mb-2">Most customers don’t even know where to begin.</p>
+                        <p class="text-gray-600 text-left">
+                            They don’t know what to say&hellip;
+                        </p>
+                        <p class="text-gray-600 text-center">
+                            They don’t know how long it will take&hellip;
+                        </p>
+                        <p class="text-gray-600 text-right">
+                            They don’t know how to post it&hellip;
+                        </p>
+                        <p class="text-gray-600 text-lg">
+                            So they just don’t.
+                        </p>
+                    </div>
+                    <div class="flex justify-center p-16 bg-[#f8f7f1]">
+                        <figure>
+                            <img src="{{ asset('images/confused-customer.webp') }}"
+                                 alt="Confused customer" class="rounded-xl w-72">
+                            <figcaption class="text-center text-gray-700 text-base">
+                                Do <strong><em>you</em></strong> know how to write a review?
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div class="flex justify-center p-16 bg-[#f8f7f1]">
+                        <img src="{{ asset('images/pushy.webp') }}" alt="Hesitant business owner" class="rounded-xl  w-72">
+                    </div>
+                    <div>
+                        <p class="text-2xl font-semibold text-gray-800 mb-2">You’re asking the wrong way.</p>
+                        <p class="text-gray-600">It feels awkward. Pushy. So you and your staff ask too late or not at all.</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center mb-8">
+                    <div>
+                        <p class="text-2xl font-semibold text-gray-800 mb-2">Your competition is outranking you.</p>
+                        <p class="text-gray-600">Google rewards businesses that consistently get fresh reviews. Like your competitors do and you
+                            <strong>don&apos;t</strong>.</p>
+                    </div>
+                    <div class="flex justify-center p-16 bg-[#f8f7f1]">
+                        <figure>
+                            <img src="{{ asset('images/competitors-outrank-you.webp') }}"
+                                 alt="Competitors having the last laugh" class="rounded-xl w-72">
+                            <figcaption class="text-center text-gray-700 text-base">
+                                Having the last laugh
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="w-full h-[40vh] flex">
-        <div class="w-1/2 flex flex-column items-center justify-center bg-zinc-50 p-10">
-            <h2 class="text-4xl text-center mr-8">The problem is&hellip;</h2>
-            <p class="text-3xl max-w-6xl ">
-                …being asked to write a review has all the appeal of a Friday afternoon homework assignment…
-            </p>
-        </div>
-        <div class="w-1/2 flex items-center justify-center bg-stone-100">
-            <img src="{{ asset('images/homework-yuck.webp') }}" alt="" class="rounded-[50%]">
-            <p class="text-3xl max-w-84  ">
-                “Give me 1500 words on why I like this business. It’s due Monday.”
-            </p>
+
+    <section id="solutions" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-2">
+            <h2 class="text-xl md:text-3xl lg:text-4xl font-bold text-red-900 mt-12 text-left">
+                The Path to Review Enlightenment
+            </h2>
+            <div class="space-y-12">
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <p class="text-2xl font-semibold text-gray-800 mb-2">We make reviews easy for your customers.</p>
+                        <p class="text-gray-600">Quick, guided questions lead to powerful, polished reviews.</p>
+                    </div>
+                    <div>
+                        <img src="images/easy-review.png" alt="Easy review form" class="rounded-xl shadow-md w-full">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <p class="text-2xl font-semibold text-gray-800 mb-2">We help you get reviews <em>continuously</em>.</p>
+                        <p class="text-gray-600">Not just once in a while — but week after week, like clockwork.</p>
+                    </div>
+                    <div>
+                        <img src="images/steady-flow.png" alt="Continuous reviews" class="rounded-xl shadow-md w-full">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <p class="text-2xl font-semibold text-gray-800 mb-2">We build reviews that Google loves.</p>
+                        <p class="text-gray-600">They include your keywords, your location, and your strengths.</p>
+                    </div>
+                    <div>
+                        <img src="images/google-love.png" alt="Optimized reviews" class="rounded-xl shadow-md w-full">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <p class="text-2xl font-semibold text-gray-800 mb-2">We help your team become review-savvy.</p>
+                        <p class="text-gray-600">No more guessing. Everyone knows the plan — and it works.</p>
+                    </div>
+                    <div>
+                        <img src="images/team-plan.png" alt="Team with strategy" class="rounded-xl shadow-md w-full">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <div class="text-9xl text-center">Why?</div>
-    <section class="w-full h-[40vh] flex">
-        <div class="bg-hurts-bg bg-contain bg-center w-1/2 flex items-center justify-center bg-zinc-50">
-            <p class="m-auto w-3/4 text-center text-zinc-50 font-semibold italic text-4xl my-8 border-white border-t-2 border-b-2 py-2 ">
-                Because reviews take <strong>too much mental effort</strong> with <strong>no reward</strong>.
-            </p>
-        </div>
-        <div class="w-1/2 flex items-center justify-center bg-stone-100 p-10">
-            <p class="text-8xl max-w-6xl ">
-                That means...
-            </p>
+
+    <section id="benefits" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-xl md:text-3xl lg:text-4xl font-bold text-red-900 mt-12 text-left">
+                The Result: Review Nirvana
+            </h2>
+
+            <div class="space-y-16">
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <p class="text-2xl font-semibold text-gray-800 mb-2">You get more reviews — without begging.</p>
+                        <p class="text-gray-600">No more chasing. Just a smooth, simple system.</p>
+                    </div>
+                    <div>
+                        <img src="images/review-happiness.png" alt="Business owner happy" class="rounded-xl shadow-md w-full">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <p class="text-2xl font-semibold text-gray-800 mb-2">You climb higher in local search.</p>
+                        <p class="text-gray-600">More visibility. More clicks. More customers.</p>
+                    </div>
+                    <div>
+                        <img src="images/search-up.png" alt="Improved rankings" class="rounded-xl shadow-md w-full">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <p class="text-2xl font-semibold text-gray-800 mb-2">Your customers build your reputation for you.</p>
+                        <p class="text-gray-600">They tell the world what makes you great — in their own words.</p>
+                    </div>
+                    <div>
+                        <img src="{{ asset('images/happy-reviewer.png') }}" alt="Happy reviewer" class="rounded-xl shadow-md w-full">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <p class="text-2xl font-semibold text-gray-800 mb-2">You finally stop banging your head against the wall.</p>
+                        <p class="text-gray-600">And wow — does that feel good.</p>
+                    </div>
+                    <div>
+                        <img src="images/relief.png" alt="Relaxed owner" class="rounded-xl shadow-md w-full">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
     <section>
-
+<p>Talk is cheap</p>
     </section>
     <!-- Accordion Feature Section -->
 {{--    <section class="bg-zinc-50 py-12 px-6" x-data="{ selected: null }">--}}
@@ -68,7 +235,7 @@
 {{--            <div class="space-y-4">--}}
 {{--                <!-- Feature 1 -->--}}
 {{--                <div class="bg-white rounded-xl shadow-sm p-4" @click="selected !== 1 ? selected = 1 : selected = null">--}}
-{{--                    <h3 class="text-lg font-semibold flex justify-between items-center cursor-pointer">--}}
+{{--                    <h3 class="text-2xl font-semibold flex justify-between items-center cursor-pointer">--}}
 {{--                        🃏 Review Cards That Work--}}
 {{--                        <span x-show="selected !== 1">➕</span>--}}
 {{--                        <span x-show="selected === 1">➖</span>--}}
@@ -80,7 +247,7 @@
 
 {{--                <!-- Feature 2 -->--}}
 {{--                <div class="bg-white rounded-xl shadow-sm p-4" @click="selected !== 2 ? selected = 2 : selected = null">--}}
-{{--                    <h3 class="text-lg font-semibold flex justify-between items-center cursor-pointer">--}}
+{{--                    <h3 class="text-2xl font-semibold flex justify-between items-center cursor-pointer">--}}
 {{--                        💻 Two Shakes Review App--}}
 {{--                        <span x-show="selected !== 2">➕</span>--}}
 {{--                        <span x-show="selected === 2">➖</span>--}}
@@ -92,7 +259,7 @@
 
 {{--                <!-- Feature 3 -->--}}
 {{--                <div class="bg-white rounded-xl shadow-sm p-4" @click="selected !== 3 ? selected = 3 : selected = null">--}}
-{{--                    <h3 class="text-lg font-semibold flex justify-between items-center cursor-pointer">--}}
+{{--                    <h3 class="text-2xl font-semibold flex justify-between items-center cursor-pointer">--}}
 {{--                        📘 Free Guide to Boosting Reviews--}}
 {{--                        <span x-show="selected !== 3">➕</span>--}}
 {{--                        <span x-show="selected === 3">➖</span>--}}
